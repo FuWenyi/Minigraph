@@ -1,6 +1,12 @@
 # Directories
 bin
 cmake-build-debug
+ssd
+third_party/gflags
+third_party/glog
+inputs/twitter.csv
+inputs/workspace
+inputs/workspace_10
 .idea
 
 # Auxiliary files

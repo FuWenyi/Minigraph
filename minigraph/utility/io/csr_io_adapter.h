@@ -167,7 +167,7 @@ class CSRIOAdapter : public IOAdapterBase<GID_T, VID_T, VDATA_T, EDATA_T> {
           u->out_edges = (VID_T*)malloc(sizeof(VID_T) * (u->outdegree));
           memset(u->out_edges, 0, sizeof(VID_T) * (u->outdegree));
           vertexes[global_id] = u;
-          LOG_INFO(u->vid, " ", global_id);
+          //LOG_INFO(u->vid, " ", global_id);
         }
         if (pending_packages.fetch_sub(1) == 1) finish_cv.notify_all();
         return;

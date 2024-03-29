@@ -322,6 +322,8 @@ class EdgeListIOAdapter : public IOAdapterBase<GID_T, VID_T, VDATA_T, EDATA_T> {
     std::condition_variable finish_cv;
     std::unique_lock<std::mutex> lck(mtx);
 
+    LOG_INFO("separator ", separator_params);
+    LOG_INFO("Ready Open ", pt);
     rapidcsv::Document doc(pt, rapidcsv::LabelParams(-1, -1),
                            rapidcsv::SeparatorParams(separator_params));
     LOG_INFO("Open ", pt);

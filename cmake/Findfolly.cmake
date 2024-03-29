@@ -17,16 +17,19 @@
 
 include(FindPackageHandleStandardArgs)
 
-set(FOLLY_ROOT_DIR "" CACHE PATH "Folder contains libfolly")
+set(FOLLY_ROOT_DIR /tmp/fbcode_builder_getdeps-ZhomeZfollyZbuildZfbcode_builder-root/installed/folly)
+
 
 # We are testing only a couple of files in the include directories
-find_path(FOLLY_INCLUDE_DIR folly PATHS ${FOLLY_ROOT_DIR}/include)
-find_library(FOLLY_LIBRARY folly PATHS  ${FOLLY_ROOT_DIR}/lib)
+set(FOLLY_INCLUDE_DIR ${FOLLY_ROOT_DIR}/include)
+set(FOLLY_LIBRARY ${FOLLY_ROOT_DIR}/lib/libfolly.a)
 
 find_package_handle_standard_args(FOLLY DEFAULT_MSG FOLLY_INCLUDE_DIR FOLLY_LIBRARY)
 
 
 if(FOLLY_FOUND)
+    set(FOLLY_INCLUDE_DIRS ${FOLLY_INCLUDE_DIR})
+    set(FOLLY_LIBRARIES ${FOLLY_LIBRARY})
     message(STATUS "Found folly (include: ${FOLLY_INCLUDE_DIRS}, library: ${FOLLY_LIBRARIES})")
     mark_as_advanced(FOLLY_LIBRARY_DEBUG FOLLY_LIBRARY_RELEASE
         FOLLY_LIBRARY FOLLY_INCLUDE_DIR FOLLY_ROOT_DIR)

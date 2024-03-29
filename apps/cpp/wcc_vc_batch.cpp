@@ -143,7 +143,7 @@ class WCCPIE : public minigraph::AutoAppBase<GRAPH_T, CONTEXT_T> {
                                         &global_si);
       auto iter_end_time = std::chrono::system_clock::now();
       //LOG_INFO("#", count++, " ", out_visited->get_num_bit());
-      LOG_INFO("#", count++);
+      //LOG_INFO("#", count++);
       std::swap(in_visited, out_visited);
     }
 
@@ -282,7 +282,13 @@ int main(int argc, char* argv[]) {
   minigraph::MiniGraphSys<CSR_T, WCCPIE_T> minigraph_sys(
       work_space, num_workers_lc, num_workers_cc, num_workers_dc, num_cores,
       buffer_size, app_wrapper, FLAGS_mode, FLAGS_niters, FLAGS_scheduler);
+  
+  char cmd[256];
+	//sprintf(cmd,"%s","iostat -x 1 -k -p > iostat_wcc.log&");
+	//std::cout<<cmd<<"\n";
+  //system((const char *)cmd);
   minigraph_sys.RunSys();
+  //system("killall iostat");
   gflags::ShutDownCommandLineFlags();
   exit(0);
 }

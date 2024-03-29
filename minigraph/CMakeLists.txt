@@ -1,12 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
 project(minigraph)
 
+message(STATUS "in minigraph")
+
 # Directories
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_ROOT_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_ROOT_DIR}/bin)
-
-###### Custom options ######
-option(USE_JEMALLOC "Whether to use jemalloc, default: ON." ON)
 
 #######################
 # Libraries
@@ -15,16 +14,22 @@ include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-# folly
-find_package(folly REQUIRED)
-if (NOT TARGET Folly::folly)
-    include("${FOLLY_CMAKE_DIR}/folly-targets.cmake")
+message(STATUS "USE_FOLLY: ${USE_FOLLY}")
+
+if (USE_FOLLY)
+    include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/Findfolly.cmake" OPTIONAL)
+    if (NOT FOLLY_FOUND)
+        message(STATUS "folly not found, build without folly")
+    else ()
+        include_directories(${FOLLY_INCLUDE_DIRS})
+    endif ()
 endif ()
-set(FOLLY_LIBRARIES Folly::folly)
+
+message(STATUS "USE_JEMALLOC: ${USE_JEMALLOC}")
 
 # jemalloc
 if (USE_JEMALLOC)
-    include("cmake/FindJemalloc.cmake" OPTIONAL)
+    include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/FindJemalloc.cmake" OPTIONAL)
     if (NOT JEMALLOC_FOUND)
         message(STATUS "jemalloc not found, build without jemalloc")
     else ()
@@ -36,7 +41,6 @@ endif ()
 # yaml-cpp
 include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/Findyaml-cpp.cmake" OPTIONAL)
 include_directories(${THIRD_PARTY_ROOT}/yaml-cpp/include)
-message(${THIRD_PARTY_ROOT}/yaml-cpp/include/)
 if (NOT YAML_CPP_FOUND)
     message(STATUS "yaml-cpp not found, build without yaml-cpp")
 endif ()
@@ -50,9 +54,6 @@ endif ()
 # find Threads
 set(CMAKE_THREAD_PREFER_PTHREAD ON)
 find_package(Threads REQUIRED)
-
-# find gflag
-find_package(gflags REQUIRED)
 
 # Boost-ext sml
 include_directories(${THIRD_PARTY_ROOT}/sml/include)
@@ -95,8 +96,18 @@ endif ()
 #######################
 add_library(minigraph ${MINIGRAPH_SOURCES})
 
+message(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
+message(STATUS "GLOG_INCLUDE_DIRS ${GLOG_INCLUDE_DIRS}")
+message(STATUS "GFLAGS_INCLUDE_DIRS ${GFLAGS_INCLUDE_DIRS}")
+
 target_link_libraries(minigraph
+        PUBLIC 
         ${FOLLY_LIBRARIES}
+        ${FMT_LIBRARIES}
+        ${GLOG_LIBRARIES}
+        ${GFLAGS_LIBRARIES}
+        ${DOUBLECONVERSION_LIBRARIES}
         ${YAML_CPP_LIBRARIES}
         ${JEMALLOC_LIBRARIES}
-        )
+        ${CMAKE_DL_LIBS}
+	)

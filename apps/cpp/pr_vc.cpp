@@ -306,7 +306,13 @@ int main(int argc, char* argv[]) {
   minigraph::MiniGraphSys<CSR_T, PRPIE_T> minigraph_sys(
       work_space, num_workers_lc, num_workers_cc, num_workers_dc, num_cores,
       buffer_size, app_wrapper, FLAGS_mode, num_iter);
+  
+  char cmd[256];
+  //sprintf(cmd,"%s","iostat -x 1 -k -p > iostat_pr.log&");
+	//std::cout<<cmd<<"\n";  
+  //system((const char *)cmd);
   minigraph_sys.RunSys();
+  //system("killall iostat");
   // minigraph_sys.ShowResult(30);
   gflags::ShutDownCommandLineFlags();
   exit(0);

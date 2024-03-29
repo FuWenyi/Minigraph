@@ -1,0 +1,157 @@
+I0326 13:59:38.453955 10109 minigraph_sys.h:52] WorkSpace: ssd/workspace_4/ num_workers_lc: 1, num_workers_cc: 1, num_worker_dc: 1, num_threads: 12, buffer size: 3
+I0326 13:59:38.454285 10109 default_message_manager.h:31] Init Message Manager: ssd/workspace_4/
+I0326 13:59:38.719542 10109 sys_data_structure.h:124] 0,0,11605820,40504566,110182420,1047438888,3844168597,21518869172,0,69677854,285477351,11605820,0
+I0326 13:59:38.720569 10109 sys_data_structure.h:124] 0,0,9922764,44646852,106153293,3932170714,8457358619,20972836817,0,61506441,299934336,9922764,0
+I0326 13:59:38.721591 10109 sys_data_structure.h:124] 0,0,9922613,702843211,922330324,27482788669393,64087142330255,156408903571138,0,219487113,1757455885,9922613,0
+I0326 13:59:38.722559 10109 sys_data_structure.h:124] 0,0,8254597,4091939,82637407,60147019,742230117,28748875725,0,78545468,99739316,8254597,0
+I0326 13:59:38.749475 10109 data_mngr.h:431] 2 
+I0326 13:59:38.749526 10109 data_mngr.h:431] 1 
+I0326 13:59:38.749536 10109 data_mngr.h:431] 0 
+I0326 13:59:38.749546 10109 data_mngr.h:431] 3 
+I0326 13:59:38.751888 10109 fifo_scheduler.h:15] Init FIFO.
+I0326 13:59:38.751932 10109 load_component.h:90] Init LoadComponent: Finish.
+I0326 13:59:38.752001 10109 computing_component.h:64] Init ComputingComponent: Finish. TotalParallelism: 12
+I0326 13:59:38.752019 10109 discharge_component.h:66] Init DischargeComponent: Finish.
+I0326 13:59:38.752031 10109 minigraph_sys.h:159] Init MiniGraphSys: Finish.
+I0326 13:59:38.752045 10109 minigraph_sys.h:178] START MiniGraph.
+I0326 13:59:38.752263 10111 discharge_component.h:72] Run DC
+I0326 13:59:38.752265 10112 load_component.h:94] Run LC
+I0326 13:59:38.752268 10110 computing_component.h:71] Run CC
+I0326 13:59:38.752402 10112 load_component.h:125] ProcessGraph2
+I0326 13:59:38.752442 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 13:59:52.418214 10112 load_component.h:169] finished
+I0326 13:59:52.418300 10112 load_component.h:125] ProcessGraph1
+I0326 13:59:52.418331 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 13:59:52.418637 10114 computing_component.h:103] ProcessGraph2
+I0326 13:59:52.458356 10114 wcc_vc_batch.cpp:121] PEval() - Processing gid: 2 num_vertexes: 9922613
+I0326 13:59:54.678738 10112 load_component.h:169] finished
+I0326 13:59:54.678797 10112 load_component.h:125] ProcessGraph0
+I0326 13:59:54.678812 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 13:59:54.678902 10114 computing_component.h:103] ProcessGraph1
+I0326 13:59:54.707101 10114 wcc_vc_batch.cpp:121] PEval() - Processing gid: 1 num_vertexes: 9922764
+I0326 13:59:56.729274 10111 data_mngr.h:322] Erase2
+I0326 13:59:57.848596 10112 load_component.h:169] finished
+I0326 13:59:57.848697 10112 load_component.h:125] ProcessGraph3
+I0326 13:59:57.848715 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 13:59:57.848813 10114 computing_component.h:103] ProcessGraph0
+I0326 13:59:57.890995 10114 wcc_vc_batch.cpp:121] PEval() - Processing gid: 0 num_vertexes: 11605820
+I0326 13:59:59.243070 10112 load_component.h:169] finished
+I0326 14:00:00.012889 10111 data_mngr.h:322] Erase1
+I0326 14:00:00.255365 10114 wcc_vc_batch.cpp:177] End PEval: elapsed 2.364278
+I0326 14:00:00.255511 10114 computing_component.h:103] ProcessGraph3
+I0326 14:00:00.274586 10114 wcc_vc_batch.cpp:121] PEval() - Processing gid: 3 num_vertexes: 8254597
+I0326 14:00:00.828412 10111 data_mngr.h:322] Erase0
+I0326 14:00:01.079005 10111 discharge_component.h:93] Sync
+All state: RC  RC  RC  RC  
+I0326 14:00:01.079891 10111 discharge_component.h:95] step: 1 50
+I0326 14:00:01.079993 10112 load_component.h:125] ProcessGraph3
+I0326 14:00:01.080030 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:01.815464 10112 load_component.h:169] finished
+I0326 14:00:01.815543 10112 load_component.h:125] ProcessGraph0
+I0326 14:00:01.815560 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:01.815557 10114 computing_component.h:103] ProcessGraph3
+I0326 14:00:02.138693 10114 sys_data_structure.h:124] 1,1,8108715,0,0,0,0,0,16912480,0,99739316,8254597,0.3120650053024292
+I0326 14:00:02.527807 10111 data_mngr.h:322] Erase3
+I0326 14:00:03.555547 10112 load_component.h:169] finished
+I0326 14:00:03.555603 10112 load_component.h:125] ProcessGraph1
+I0326 14:00:03.555617 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:03.555653 10114 computing_component.h:103] ProcessGraph0
+I0326 14:00:04.471728 10114 sys_data_structure.h:124] 1,1,10195350,0,0,0,0,0,172090843,0,285477351,11605820,0.9007019996643066
+I0326 14:00:05.050642 10111 data_mngr.h:322] Erase0
+I0326 14:00:05.422940 10112 load_component.h:169] finished
+I0326 14:00:05.423012 10112 load_component.h:125] ProcessGraph2
+I0326 14:00:05.423027 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:05.423103 10114 computing_component.h:103] ProcessGraph1
+I0326 14:00:07.257233 10114 sys_data_structure.h:124] 1,16,9159969,32409253,79047276,3503876675,7447329662,18532132214,192442734,0,299934336,9922764,1.782080054283142
+I0326 14:00:07.896388 10111 data_mngr.h:322] Erase1
+I0326 14:00:16.702414 10112 load_component.h:169] finished
+I0326 14:00:16.702571 10114 computing_component.h:103] ProcessGraph2
+I0326 14:00:27.290706 10114 sys_data_structure.h:124] 1,8,8296811,707568735,929364232,28147744846291,65664045825975,160166284964688,831572699,0,1757455885,9922613,10.526141166687012
+I0326 14:00:32.417113 10111 data_mngr.h:322] Erase2
+I0326 14:00:33.545730 10111 discharge_component.h:93] Sync
+All state: RC  RC  RC  RC  
+I0326 14:00:33.545824 10111 discharge_component.h:95] step: 2 50
+I0326 14:00:33.546001 10112 load_component.h:125] ProcessGraph3
+I0326 14:00:33.546056 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:34.311181 10112 load_component.h:169] finished
+I0326 14:00:34.311242 10112 load_component.h:125] ProcessGraph0
+I0326 14:00:34.311257 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:34.311396 10114 computing_component.h:103] ProcessGraph3
+I0326 14:00:34.616186 10114 sys_data_structure.h:124] 1,5,813908,2256787,8667780,38665657,108608327,565758926,16912480,0,99739316,8254597,0.29117700457572937
+I0326 14:00:35.119648 10111 data_mngr.h:322] Erase3
+I0326 14:00:36.011186 10112 load_component.h:169] finished
+I0326 14:00:36.011248 10112 load_component.h:125] ProcessGraph1
+I0326 14:00:36.011263 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:36.011352 10114 computing_component.h:103] ProcessGraph0
+I0326 14:00:37.615920 10114 sys_data_structure.h:124] 1,12,5685103,21383998,44140758,258775648,570778645,1452451346,172090843,0,285477351,11605820,1.5702619552612305
+I0326 14:00:38.030496 10112 load_component.h:169] finished
+I0326 14:00:38.030571 10112 load_component.h:125] ProcessGraph2
+I0326 14:00:38.030586 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:38.030672 10114 computing_component.h:103] ProcessGraph1
+I0326 14:00:38.256362 10111 data_mngr.h:322] Erase0
+I0326 14:00:42.584229 10114 sys_data_structure.h:124] 1,7,4339818,14312231,33237635,827232733,1722274389,3813469129,192442734,0,299934336,9922764,4.522924900054932
+I0326 14:00:43.282181 10111 data_mngr.h:322] Erase1
+I0326 14:00:46.435439 10112 load_component.h:169] finished
+I0326 14:00:46.435643 10114 computing_component.h:103] ProcessGraph2
+I0326 14:00:48.259436 10114 sys_data_structure.h:124] 1,6,83395,680697,1041484,2871662423,5297631178,9993248140,831572699,0,1757455885,9922613,1.8087270259857178
+I0326 14:00:53.459792 10111 data_mngr.h:322] Erase2
+I0326 14:00:54.539116 10111 discharge_component.h:93] Sync
+All state: RC  RC  RC  RC  
+I0326 14:00:54.539214 10111 discharge_component.h:95] step: 3 50
+I0326 14:00:54.539330 10112 load_component.h:125] ProcessGraph3
+I0326 14:00:54.539413 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:55.298174 10112 load_component.h:169] finished
+I0326 14:00:55.298242 10112 load_component.h:125] ProcessGraph0
+I0326 14:00:55.298260 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:55.298344 10114 computing_component.h:103] ProcessGraph3
+I0326 14:00:55.558773 10114 sys_data_structure.h:124] 1,5,7072,13435,33677,54121,164850,1142661,16912480,0,99739316,8254597,0.24897800385951996
+I0326 14:00:56.042954 10111 data_mngr.h:322] Erase3
+I0326 14:00:57.033030 10112 load_component.h:169] finished
+I0326 14:00:57.033088 10112 load_component.h:125] ProcessGraph1
+I0326 14:00:57.033103 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:57.033164 10114 computing_component.h:103] ProcessGraph0
+I0326 14:00:57.935113 10114 sys_data_structure.h:124] 1,13,21764,66218,100774,320302,477829,922588,172090843,0,285477351,11605820,0.8853549957275391
+I0326 14:00:58.551620 10111 data_mngr.h:322] Erase0
+I0326 14:00:58.997506 10112 load_component.h:169] finished
+I0326 14:00:58.997568 10112 load_component.h:125] ProcessGraph2
+I0326 14:00:58.997582 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:00:58.997661 10114 computing_component.h:103] ProcessGraph1
+I0326 14:00:59.937870 10114 sys_data_structure.h:124] 1,5,1324,2697,5299,10557,19645,45571,192442734,0,299934336,9922764,0.9269409775733948
+I0326 14:01:00.535991 10111 data_mngr.h:322] Erase1
+I0326 14:01:07.170831 10112 load_component.h:169] finished
+I0326 14:01:07.171139 10114 computing_component.h:103] ProcessGraph2
+I0326 14:01:08.887900 10114 sys_data_structure.h:124] 1,3,189,685,1124,11955,13665,16940,831572699,0,1757455885,9922613,1.7035340070724487
+I0326 14:01:08.888004 10111 data_mngr.h:322] Erase2
+I0326 14:01:09.969832 10111 discharge_component.h:93] Sync
+All state: RC  RC  RC  RT  
+I0326 14:01:09.969928 10111 discharge_component.h:95] step: 4 50
+I0326 14:01:09.970039 10112 load_component.h:125] ProcessGraph3
+I0326 14:01:09.970092 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:01:10.736855 10112 load_component.h:169] finished
+I0326 14:01:10.736914 10112 load_component.h:125] ProcessGraph0
+I0326 14:01:10.736928 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:01:10.737017 10114 computing_component.h:103] ProcessGraph3
+I0326 14:01:11.006950 10114 sys_data_structure.h:124] 1,3,39,73,182,231,445,1248,16912480,0,99739316,8254597,0.25847500562667847
+I0326 14:01:11.007054 10111 data_mngr.h:322] Erase3
+I0326 14:01:12.484629 10112 load_component.h:169] finished
+I0326 14:01:12.484685 10112 load_component.h:125] ProcessGraph1
+I0326 14:01:12.484699 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:01:12.484800 10114 computing_component.h:103] ProcessGraph0
+I0326 14:01:13.321378 10114 sys_data_structure.h:124] 1,2,14,51,76,293,413,604,172090843,0,285477351,11605820,0.8211860060691833
+I0326 14:01:13.321474 10111 data_mngr.h:322] Erase0
+I0326 14:01:14.463684 10112 load_component.h:169] finished
+I0326 14:01:14.463741 10112 load_component.h:125] ProcessGraph2
+I0326 14:01:14.463755 10112 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:01:14.463790 10114 computing_component.h:103] ProcessGraph1
+I0326 14:01:15.294628 10114 sys_data_structure.h:124] 1,3,17,83,183,3091,7046,16149,192442734,0,299934336,9922764,0.8171520233154297
+I0326 14:01:15.294758 10111 data_mngr.h:322] Erase1
+I0326 14:01:22.291590 10112 load_component.h:169] finished
+I0326 14:01:22.291745 10114 computing_component.h:103] ProcessGraph2
+I0326 14:01:23.950352 10114 sys_data_structure.h:124] 1,1,1,685,1124,11955,13665,16940,831572699,0,1757455885,9922613,1.6454110145568848
+I0326 14:01:23.950457 10111 data_mngr.h:322] Erase2
+I0326 14:01:25.018673 10111 discharge_component.h:93] Sync
+All state: RT  RT  RT  RT  
+I0326 14:01:25.018766 10111 discharge_component.h:95] step: 5 50
+I0326 14:01:25.018790 10111 discharge_component.h:102] DC exit
+         #### RUNSYS(): Finish, Elapse time: 106.286, Superstep: 5 ####      
+I0326 14:01:25.055429 10109 minigraph_sys.h:165] MiniGraph STOP.

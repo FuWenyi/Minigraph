@@ -1,0 +1,283 @@
+I0326 14:38:10.609409 10211 minigraph_sys.h:52] WorkSpace: ssd/workspace_10/ num_workers_lc: 1, num_workers_cc: 1, num_worker_dc: 1, num_threads: 12, buffer size: 1
+I0326 14:38:10.609739 10211 default_message_manager.h:31] Init Message Manager: ssd/workspace_10/
+I0326 14:38:10.890012 10211 sys_data_structure.h:124] 0,0,5650749,12979328,59770366,244788540,1346844903,19373419648,0,46791038,120624169,5650749,0
+I0326 14:38:10.891026 10211 sys_data_structure.h:124] 0,0,3970128,9742193,32279830,99891237,280213104,1223366212,0,22537637,109139559,3970128,0
+I0326 14:38:10.891999 10211 sys_data_structure.h:124] 0,0,3969793,11118480,37692239,235094972,738810698,3186618407,0,26573759,117340888,3969793,0
+I0326 14:38:10.892970 10211 sys_data_structure.h:124] 0,0,3969182,12251529,37641519,521878689,1132640603,3798168959,0,25389990,114412820,3969182,0
+I0326 14:38:10.893946 10211 sys_data_structure.h:124] 0,0,3968730,15693501,48951772,1897306845,4804812363,14910133698,0,33258271,123894317,3968730,0
+I0326 14:38:10.894956 10211 sys_data_structure.h:124] 0,0,3968999,461841347,591606974,2885386700445,4570684084926,9034678071396,0,129765627,1220655461,3968999,0
+I0326 14:38:10.895966 10211 sys_data_structure.h:124] 0,0,3969015,90136167,309658272,5677189997479,28680059839761,147368407072812,0,219522105,480839262,3969015,0
+I0326 14:38:10.896933 10211 sys_data_structure.h:124] 0,0,3837673,10035057,36161846,640344719,1752097556,6967439644,0,26126789,88159786,3837673,0
+I0326 14:38:10.897847 10211 sys_data_structure.h:124] 0,0,3291556,0,28706562,0,0,12487653318,0,28706562,28706562,3291556,0
+I0326 14:38:10.898758 10211 sys_data_structure.h:124] 0,0,3109969,0,38834064,0,0,15112208758,0,38834064,38834064,3109969,0
+I0326 14:38:10.925479 10211 data_mngr.h:431] 9 
+I0326 14:38:10.925533 10211 data_mngr.h:431] 6 
+I0326 14:38:10.925543 10211 data_mngr.h:431] 4 
+I0326 14:38:10.925552 10211 data_mngr.h:431] 7 
+I0326 14:38:10.925561 10211 data_mngr.h:431] 2 
+I0326 14:38:10.925570 10211 data_mngr.h:431] 5 
+I0326 14:38:10.925579 10211 data_mngr.h:431] 8 
+I0326 14:38:10.925588 10211 data_mngr.h:431] 1 
+I0326 14:38:10.925597 10211 data_mngr.h:431] 0 
+I0326 14:38:10.925606 10211 data_mngr.h:431] 3 
+I0326 14:38:10.927658 10211 fifo_scheduler.h:15] Init FIFO.
+I0326 14:38:10.927703 10211 load_component.h:90] Init LoadComponent: Finish.
+I0326 14:38:10.927778 10211 computing_component.h:64] Init ComputingComponent: Finish. TotalParallelism: 12
+I0326 14:38:10.927798 10211 discharge_component.h:66] Init DischargeComponent: Finish.
+I0326 14:38:10.927811 10211 minigraph_sys.h:159] Init MiniGraphSys: Finish.
+I0326 14:38:10.927822 10211 minigraph_sys.h:178] START MiniGraph.
+I0326 14:38:10.928028 10212 computing_component.h:71] Run CC
+I0326 14:38:10.928029 10214 discharge_component.h:72] Run DC
+I0326 14:38:10.928034 10213 load_component.h:94] Run LC
+I0326 14:38:10.928174 10213 load_component.h:125] ProcessGraph9
+I0326 14:38:10.928214 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:11.309384 10213 load_component.h:169] finished
+I0326 14:38:11.309605 10216 computing_component.h:103] ProcessGraph9
+I0326 14:38:11.309703 10216 pr_vc.cpp:181] Init() - Processing gid: 9
+I0326 14:38:11.322049 10216 pr_vc.cpp:192] PEval() - Processing gid: 9
+Gid 9:  PEval elapse time 0.031277
+I0326 14:38:11.372406 10214 data_mngr.h:322] Erase9
+I0326 14:38:11.428340 10213 load_component.h:125] ProcessGraph6
+I0326 14:38:11.428422 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:13.623989 10213 load_component.h:169] finished
+I0326 14:38:13.624164 10216 computing_component.h:103] ProcessGraph6
+I0326 14:38:13.624208 10216 pr_vc.cpp:181] Init() - Processing gid: 6
+I0326 14:38:13.630433 10216 pr_vc.cpp:192] PEval() - Processing gid: 6
+Gid 6:  PEval elapse time 0.037281
+I0326 14:38:15.032126 10214 data_mngr.h:322] Erase6
+I0326 14:38:15.380683 10213 load_component.h:125] ProcessGraph4
+I0326 14:38:15.380776 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:16.055645 10213 load_component.h:169] finished
+I0326 14:38:16.055882 10216 computing_component.h:103] ProcessGraph4
+I0326 14:38:16.055932 10216 pr_vc.cpp:181] Init() - Processing gid: 4
+I0326 14:38:16.062767 10216 pr_vc.cpp:192] PEval() - Processing gid: 4
+Gid 4:  PEval elapse time 0.04605
+I0326 14:38:16.367277 10214 data_mngr.h:322] Erase4
+I0326 14:38:16.490042 10213 load_component.h:125] ProcessGraph7
+I0326 14:38:16.490115 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:17.056535 10213 load_component.h:169] finished
+I0326 14:38:17.056693 10216 computing_component.h:103] ProcessGraph7
+I0326 14:38:17.056738 10216 pr_vc.cpp:181] Init() - Processing gid: 7
+I0326 14:38:17.062522 10216 pr_vc.cpp:192] PEval() - Processing gid: 7
+Gid 7:  PEval elapse time 0.031142
+I0326 14:38:17.279239 10214 data_mngr.h:322] Erase7
+I0326 14:38:17.383546 10213 load_component.h:125] ProcessGraph2
+I0326 14:38:17.383617 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:18.064152 10213 load_component.h:169] finished
+I0326 14:38:18.064300 10216 computing_component.h:103] ProcessGraph2
+I0326 14:38:18.064362 10216 pr_vc.cpp:181] Init() - Processing gid: 2
+I0326 14:38:18.069963 10216 pr_vc.cpp:192] PEval() - Processing gid: 2
+Gid 2:  PEval elapse time 0.030504
+I0326 14:38:18.294106 10214 data_mngr.h:322] Erase2
+I0326 14:38:18.404079 10213 load_component.h:125] ProcessGraph5
+I0326 14:38:18.404153 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:22.018558 10213 load_component.h:169] finished
+I0326 14:38:22.018730 10216 computing_component.h:103] ProcessGraph5
+I0326 14:38:22.018777 10216 pr_vc.cpp:181] Init() - Processing gid: 5
+I0326 14:38:22.037697 10216 pr_vc.cpp:192] PEval() - Processing gid: 5
+Gid 5:  PEval elapse time 0.031833
+I0326 14:38:22.069691 10214 data_mngr.h:322] Erase5
+I0326 14:38:22.619690 10213 load_component.h:125] ProcessGraph8
+I0326 14:38:22.619766 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:22.911281 10213 load_component.h:169] finished
+I0326 14:38:22.911441 10216 computing_component.h:103] ProcessGraph8
+I0326 14:38:22.911500 10216 pr_vc.cpp:181] Init() - Processing gid: 8
+I0326 14:38:22.916543 10216 pr_vc.cpp:192] PEval() - Processing gid: 8
+Gid 8:  PEval elapse time 0.032449
+I0326 14:38:22.975772 10214 data_mngr.h:322] Erase8
+I0326 14:38:23.028563 10213 load_component.h:125] ProcessGraph1
+I0326 14:38:23.028632 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:23.576824 10213 load_component.h:169] finished
+I0326 14:38:23.576980 10216 computing_component.h:103] ProcessGraph1
+I0326 14:38:23.577043 10216 pr_vc.cpp:181] Init() - Processing gid: 1
+I0326 14:38:23.583906 10216 pr_vc.cpp:192] PEval() - Processing gid: 1
+Gid 1:  PEval elapse time 0.044056
+I0326 14:38:23.801206 10214 data_mngr.h:322] Erase1
+I0326 14:38:23.905405 10213 load_component.h:125] ProcessGraph0
+I0326 14:38:23.905475 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:24.801794 10213 load_component.h:169] finished
+I0326 14:38:24.801919 10216 computing_component.h:103] ProcessGraph0
+I0326 14:38:24.801969 10216 pr_vc.cpp:181] Init() - Processing gid: 0
+I0326 14:38:24.812256 10216 pr_vc.cpp:192] PEval() - Processing gid: 0
+Gid 0:  PEval elapse time 0.32977
+I0326 14:38:25.460166 10214 data_mngr.h:322] Erase0
+I0326 14:38:25.604005 10213 load_component.h:125] ProcessGraph3
+I0326 14:38:25.604083 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:26.215755 10213 load_component.h:169] finished
+I0326 14:38:26.215863 10216 computing_component.h:103] ProcessGraph3
+I0326 14:38:26.215917 10216 pr_vc.cpp:181] Init() - Processing gid: 3
+I0326 14:38:26.221030 10216 pr_vc.cpp:192] PEval() - Processing gid: 3
+Gid 3:  PEval elapse time 0.034244
+I0326 14:38:26.453455 10214 data_mngr.h:322] Erase3
+I0326 14:38:26.566383 10214 discharge_component.h:93] Sync
+All state: RC  RC  RC  RC  RC  RC  RC  RC  RC  RC  
+I0326 14:38:26.566469 10214 discharge_component.h:95] step: 1 50
+I0326 14:38:26.566603 10213 load_component.h:125] ProcessGraph3
+I0326 14:38:26.566673 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:27.168591 10213 load_component.h:169] finished
+I0326 14:38:27.168679 10216 computing_component.h:103] ProcessGraph3
+I0326 14:38:27.168737 10216 pr_vc.cpp:227] IncEval() - Processing gid: 3
+I0326 14:38:27.471536 10216 pr_vc.cpp:246] iter:1
+Gid 3:  IncEval elapse time 0.649028
+I0326 14:38:28.147468 10214 data_mngr.h:322] Erase3
+I0326 14:38:28.260564 10213 load_component.h:125] ProcessGraph0
+I0326 14:38:28.260647 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:29.184360 10213 load_component.h:169] finished
+I0326 14:38:29.184471 10216 computing_component.h:103] ProcessGraph0
+I0326 14:38:29.184527 10216 pr_vc.cpp:227] IncEval() - Processing gid: 0
+I0326 14:38:29.476047 10216 pr_vc.cpp:246] iter:1
+Gid 0:  IncEval elapse time 0.626296
+I0326 14:38:30.124623 10214 data_mngr.h:322] Erase0
+I0326 14:38:30.272590 10213 load_component.h:125] ProcessGraph1
+I0326 14:38:30.272679 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:30.816463 10213 load_component.h:169] finished
+I0326 14:38:30.816619 10216 computing_component.h:103] ProcessGraph1
+I0326 14:38:30.816665 10216 pr_vc.cpp:227] IncEval() - Processing gid: 1
+I0326 14:38:31.095265 10216 pr_vc.cpp:246] iter:1
+Gid 1:  IncEval elapse time 0.568083
+I0326 14:38:31.556349 10214 data_mngr.h:322] Erase1
+I0326 14:38:31.644951 10213 load_component.h:125] ProcessGraph8
+I0326 14:38:31.645026 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:31.929862 10213 load_component.h:169] finished
+I0326 14:38:31.930033 10216 computing_component.h:103] ProcessGraph8
+I0326 14:38:31.930087 10216 pr_vc.cpp:227] IncEval() - Processing gid: 8
+I0326 14:38:31.957483 10216 pr_vc.cpp:246] iter:1
+Gid 8:  IncEval elapse time 0.073089
+I0326 14:38:32.003456 10214 data_mngr.h:322] Erase8
+I0326 14:38:32.057435 10213 load_component.h:125] ProcessGraph5
+I0326 14:38:32.057517 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:35.511748 10213 load_component.h:169] finished
+I0326 14:38:35.511872 10216 computing_component.h:103] ProcessGraph5
+I0326 14:38:35.511938 10216 pr_vc.cpp:227] IncEval() - Processing gid: 5
+I0326 14:38:36.613194 10216 pr_vc.cpp:246] iter:1
+Gid 5:  IncEval elapse time 2.37245
+I0326 14:38:37.884541 10214 data_mngr.h:322] Erase5
+I0326 14:38:38.439865 10213 load_component.h:125] ProcessGraph2
+I0326 14:38:38.439939 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:39.085856 10213 load_component.h:169] finished
+I0326 14:38:39.085952 10216 computing_component.h:103] ProcessGraph2
+I0326 14:38:39.086000 10216 pr_vc.cpp:227] IncEval() - Processing gid: 2
+I0326 14:38:39.365872 10216 pr_vc.cpp:246] iter:1
+Gid 2:  IncEval elapse time 0.626118
+I0326 14:38:39.947657 10214 data_mngr.h:322] Erase2
+I0326 14:38:40.057629 10213 load_component.h:125] ProcessGraph7
+I0326 14:38:40.057695 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:40.636849 10213 load_component.h:169] finished
+I0326 14:38:40.636973 10216 computing_component.h:103] ProcessGraph7
+I0326 14:38:40.637029 10216 pr_vc.cpp:227] IncEval() - Processing gid: 7
+I0326 14:38:40.848485 10216 pr_vc.cpp:246] iter:1
+Gid 7:  IncEval elapse time 0.483698
+I0326 14:38:41.319379 10214 data_mngr.h:322] Erase7
+I0326 14:38:41.425953 10213 load_component.h:125] ProcessGraph4
+I0326 14:38:41.426032 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:42.143427 10213 load_component.h:169] finished
+I0326 14:38:42.143522 10216 computing_component.h:103] ProcessGraph4
+I0326 14:38:42.143574 10216 pr_vc.cpp:227] IncEval() - Processing gid: 4
+I0326 14:38:42.471387 10216 pr_vc.cpp:246] iter:1
+Gid 4:  IncEval elapse time 0.661747
+I0326 14:38:43.063823 10214 data_mngr.h:322] Erase4
+I0326 14:38:43.188858 10213 load_component.h:125] ProcessGraph6
+I0326 14:38:43.188927 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:45.232528 10213 load_component.h:169] finished
+I0326 14:38:45.232663 10216 computing_component.h:103] ProcessGraph6
+I0326 14:38:45.232725 10216 pr_vc.cpp:227] IncEval() - Processing gid: 6
+I0326 14:38:45.624459 10216 pr_vc.cpp:246] iter:1
+Gid 6:  IncEval elapse time 0.92399
+I0326 14:38:48.466589 10214 data_mngr.h:322] Erase6
+I0326 14:38:48.812892 10213 load_component.h:125] ProcessGraph9
+I0326 14:38:48.812964 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:49.164195 10213 load_component.h:169] finished
+I0326 14:38:49.164288 10216 computing_component.h:103] ProcessGraph9
+I0326 14:38:49.164403 10216 pr_vc.cpp:227] IncEval() - Processing gid: 9
+I0326 14:38:49.230259 10216 pr_vc.cpp:246] iter:1
+Gid 9:  IncEval elapse time 0.133322
+I0326 14:38:49.297943 10214 data_mngr.h:322] Erase9
+I0326 14:38:49.357315 10214 discharge_component.h:93] Sync
+All state: RC  RC  RC  RT  RC  RC  RC  RC  RC  RT  
+I0326 14:38:49.357403 10214 discharge_component.h:95] step: 2 50
+I0326 14:38:49.357455 10213 load_component.h:125] ProcessGraph3
+I0326 14:38:49.357513 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:49.968475 10213 load_component.h:169] finished
+I0326 14:38:49.968592 10216 computing_component.h:103] ProcessGraph3
+I0326 14:38:49.968642 10216 pr_vc.cpp:227] IncEval() - Processing gid: 3
+I0326 14:38:50.189482 10216 pr_vc.cpp:246] iter:1
+Gid 3:  IncEval elapse time 0.594581
+I0326 14:38:50.563538 10214 data_mngr.h:322] Erase3
+I0326 14:38:50.679186 10213 load_component.h:125] ProcessGraph0
+I0326 14:38:50.679286 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:51.614816 10213 load_component.h:169] finished
+I0326 14:38:51.614907 10216 computing_component.h:103] ProcessGraph0
+I0326 14:38:51.614954 10216 pr_vc.cpp:227] IncEval() - Processing gid: 0
+I0326 14:38:51.868399 10216 pr_vc.cpp:246] iter:1
+Gid 0:  IncEval elapse time 0.662971
+I0326 14:38:52.278203 10214 data_mngr.h:322] Erase0
+I0326 14:38:52.422818 10213 load_component.h:125] ProcessGraph1
+I0326 14:38:52.422888 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:52.968364 10213 load_component.h:169] finished
+I0326 14:38:52.968421 10216 computing_component.h:103] ProcessGraph1
+I0326 14:38:52.968474 10216 pr_vc.cpp:227] IncEval() - Processing gid: 1
+I0326 14:38:53.168503 10216 pr_vc.cpp:246] iter:1
+Gid 1:  IncEval elapse time 0.543392
+I0326 14:38:53.512205 10214 data_mngr.h:322] Erase1
+I0326 14:38:53.616614 10213 load_component.h:125] ProcessGraph5
+I0326 14:38:53.616703 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:38:57.086041 10213 load_component.h:169] finished
+I0326 14:38:57.086134 10216 computing_component.h:103] ProcessGraph5
+I0326 14:38:57.086184 10216 pr_vc.cpp:227] IncEval() - Processing gid: 5
+I0326 14:38:57.885438 10216 pr_vc.cpp:246] iter:1
+Gid 5:  IncEval elapse time 1.92809
+I0326 14:38:59.014570 10214 data_mngr.h:322] Erase5
+I0326 14:38:59.580972 10213 load_component.h:125] ProcessGraph2
+I0326 14:38:59.581063 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:00.215942 10213 load_component.h:169] finished
+I0326 14:39:00.216047 10216 computing_component.h:103] ProcessGraph2
+I0326 14:39:00.216104 10216 pr_vc.cpp:227] IncEval() - Processing gid: 2
+I0326 14:39:00.489992 10216 pr_vc.cpp:246] iter:1
+Gid 2:  IncEval elapse time 0.615172
+I0326 14:39:00.831560 10214 data_mngr.h:322] Erase2
+I0326 14:39:00.942314 10213 load_component.h:125] ProcessGraph7
+I0326 14:39:00.942385 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:01.517735 10213 load_component.h:169] finished
+I0326 14:39:01.517835 10216 computing_component.h:103] ProcessGraph7
+I0326 14:39:01.517890 10216 pr_vc.cpp:227] IncEval() - Processing gid: 7
+I0326 14:39:01.719172 10216 pr_vc.cpp:246] iter:1
+Gid 7:  IncEval elapse time 0.514689
+I0326 14:39:02.032812 10214 data_mngr.h:322] Erase7
+I0326 14:39:02.140970 10213 load_component.h:125] ProcessGraph4
+I0326 14:39:02.141051 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:02.846033 10213 load_component.h:169] finished
+I0326 14:39:02.846159 10216 computing_component.h:103] ProcessGraph4
+I0326 14:39:02.846216 10216 pr_vc.cpp:227] IncEval() - Processing gid: 4
+I0326 14:39:03.064645 10216 pr_vc.cpp:246] iter:1
+Gid 4:  IncEval elapse time 0.532142
+I0326 14:39:03.378781 10214 data_mngr.h:322] Erase4
+I0326 14:39:03.506857 10213 load_component.h:125] ProcessGraph6
+I0326 14:39:03.506943 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:05.495428 10213 load_component.h:169] finished
+I0326 14:39:05.495537 10216 computing_component.h:103] ProcessGraph6
+I0326 14:39:05.495600 10216 pr_vc.cpp:227] IncEval() - Processing gid: 6
+I0326 14:39:05.900674 10216 pr_vc.cpp:246] iter:1
+Gid 6:  IncEval elapse time 0.929023
+I0326 14:39:06.424871 10214 data_mngr.h:322] Erase6
+I0326 14:39:06.770575 10213 load_component.h:125] ProcessGraph8
+I0326 14:39:06.770657 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:07.053764 10213 load_component.h:169] finished
+I0326 14:39:07.053897 10216 computing_component.h:103] ProcessGraph8
+I0326 14:39:07.053972 10216 pr_vc.cpp:227] IncEval() - Processing gid: 8
+I0326 14:39:07.081068 10216 pr_vc.cpp:246] iter:1
+Gid 8:  IncEval elapse time 0.066829
+I0326 14:39:07.121040 10214 data_mngr.h:322] Erase8
+I0326 14:39:07.173725 10213 load_component.h:125] ProcessGraph9
+I0326 14:39:07.173792 10213 csr_io_adapter.h:316] Read CSR from CSR bin
+I0326 14:39:07.521562 10213 load_component.h:169] finished
+I0326 14:39:07.521594 10216 computing_component.h:103] ProcessGraph9
+I0326 14:39:07.521656 10216 pr_vc.cpp:227] IncEval() - Processing gid: 9
+I0326 14:39:07.547293 10216 pr_vc.cpp:246] iter:1
+Gid 9:  IncEval elapse time 0.065345
+I0326 14:39:07.587209 10214 data_mngr.h:322] Erase9
+I0326 14:39:07.647810 10214 discharge_component.h:93] Sync
+All state: RT  RT  RT  RT  RT  RT  RT  RT  RT  RT  
+I0326 14:39:07.647892 10214 discharge_component.h:95] step: 3 50
+I0326 14:39:07.647915 10214 discharge_component.h:102] DC exit
+         #### RUNSYS(): Finish, Elapse time: 56.7201, Superstep: 3 ####      
+I0326 14:39:07.648068 10211 minigraph_sys.h:165] MiniGraph STOP.
