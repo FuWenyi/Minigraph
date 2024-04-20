@@ -1,0 +1,11 @@
+[global]
+filename=/home/MiniGraph/ssd/workspace_4_vertex/minigraph_vdata/3.bin
+direct=1
+ioengine=libaio
+iodepth=64
+
+[read-64k-800M]
+bs=64k
+numjobs=6
+size=800m
+rw=read

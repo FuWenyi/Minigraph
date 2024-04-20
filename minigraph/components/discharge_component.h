@@ -87,7 +87,7 @@ class DischargeComponent : public ComponentBase<typename GRAPH_T::gid_t> {
         if (mode_ != "NoShort") CheckRTRule(gid);
 
         ReleaseGraphX(gid);
-        //LOG_INFO("post: ", gid);
+        LOG_INFO("post: ", gid);
         load_sem_->post();
         if (this->TrySync()) {
           LOG_INFO("Sync");

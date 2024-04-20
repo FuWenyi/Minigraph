@@ -86,6 +86,8 @@ class PRAutoMap : public minigraph::AutoMapBase<GRAPH_T, CONTEXT_T> {
                                           float gamma, float epsilon) {
     for (size_t i = tid; i < graph->get_num_vertexes(); i += step) {
       auto u = graph->GetVertexByIndex(i);
+      /*if (graph->gid_ == 3)
+        LOG_INFO("i: ", i);*/
       float next = 0;
       size_t count = 0;
       for (size_t j = 0; j < u.indegree; j++) {
@@ -94,9 +96,15 @@ class PRAutoMap : public minigraph::AutoMapBase<GRAPH_T, CONTEXT_T> {
           count++;
         } else if (graph->IsInGraph(u.in_edges[j])) {
           VID_T local_nbr_id = VID_MAX;
-          local_nbr_id = graph->globalid2localid(u.in_edges[i]);
-          assert(local_nbr_id != VID_MAX);
+          local_nbr_id = graph->globalid2localid(u.in_edges[j]);
+          assert(local_nbr_id < VID_MAX);
           VertexInfo&& v = graph->GetVertexByVid(local_nbr_id);
+          /*if (graph->gid_ == 3) {
+            LOG_INFO("vdata: ", v.vdata[0]);
+          }*/
+          if (v.vdata == nullptr) {
+            LOG_INFO("NULLPTR");
+          }
           next += v.vdata[0];
           count++;
         }
@@ -132,7 +140,7 @@ class PRAutoMap : public minigraph::AutoMapBase<GRAPH_T, CONTEXT_T> {
           // if (vid_map != nullptr)
           //   local_nbr_id = vid_map[u.in_edges[i]];
           // else
-          local_nbr_id = graph->globalid2localid(u.in_edges[i]);
+          local_nbr_id = graph->globalid2localid(u.in_edges[j]);
           assert(local_nbr_id != VID_MAX);
           VertexInfo&& v = graph->GetVertexByVid(local_nbr_id);
           next += v.vdata[0];
@@ -149,9 +157,9 @@ class PRAutoMap : public minigraph::AutoMapBase<GRAPH_T, CONTEXT_T> {
             if (graph->IsInGraph(u.out_edges[j])) {
               VID_T local_nbr_id = VID_MAX;
               if (vid_map != nullptr)
-                local_nbr_id = vid_map[u.out_edges[i]];
+                local_nbr_id = vid_map[u.out_edges[j]];
               else
-                local_nbr_id = graph->globalid2localid(u.out_edges[i]);
+                local_nbr_id = graph->globalid2localid(u.out_edges[j]);
               assert(local_nbr_id != VID_MAX);
               out_visited->set_bit(local_nbr_id);
             }

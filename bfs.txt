@@ -1,0 +1,109 @@
+I0409 16:19:10.907858 16433 minigraph_sys.h:52] WorkSpace: ssd/workspace_4/ num_workers_lc: 1, num_workers_cc: 1, num_worker_dc: 1, num_threads: 12, buffer size: 4
+I0409 16:19:10.908175 16433 default_message_manager.h:31] Init Message Manager: ssd/workspace_4/
+I0409 16:19:11.405684 16433 sys_data_structure.h:124] 0,0,11605820,40504566,110182420,1047438888,3844168597,21518869172,0,69677854,285477351,11605820,0
+I0409 16:19:11.406839 16433 sys_data_structure.h:124] 0,0,9922764,44646852,106153293,3932170714,8457358619,20972836817,0,61506441,299934336,9922764,0
+I0409 16:19:11.407981 16433 sys_data_structure.h:124] 0,0,9922613,702843211,922330324,27482788669393,64087142330255,156408903571138,0,219487113,1757455885,9922613,0
+I0409 16:19:11.409070 16433 sys_data_structure.h:124] 0,0,8254597,4091939,82637407,60147019,742230117,28748875725,0,78545468,99739316,8254597,0
+I0409 16:19:11.436084 16433 data_mngr.h:431] 2 
+I0409 16:19:11.436145 16433 data_mngr.h:431] 1 
+I0409 16:19:11.436156 16433 data_mngr.h:431] 0 
+I0409 16:19:11.436165 16433 data_mngr.h:431] 3 
+I0409 16:19:11.442705 16433 fifo_scheduler.h:15] Init FIFO.
+I0409 16:19:11.442746 16433 load_component.h:90] Init LoadComponent: Finish.
+I0409 16:19:11.442836 16433 computing_component.h:64] Init ComputingComponent: Finish. TotalParallelism: 12
+I0409 16:19:11.442856 16433 discharge_component.h:66] Init DischargeComponent: Finish.
+I0409 16:19:11.442869 16433 minigraph_sys.h:159] Init MiniGraphSys: Finish.
+I0409 16:19:11.442884 16433 minigraph_sys.h:178] START MiniGraph.
+I0409 16:19:11.443121 16435 load_component.h:94] Run LC
+I0409 16:19:11.443123 16434 computing_component.h:71] Run CC
+I0409 16:19:11.443206 16435 load_component.h:125] ProcessGraph2
+I0409 16:19:11.443237 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:11.443131 16436 discharge_component.h:72] Run DC
+I0409 16:19:11.445183 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/2.bin data size(MB): 7158
+I0409 16:19:18.666159 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/2.bin data size(MB): 3223.60298538208
+I0409 16:19:22.858014 16435 load_component.h:151] Read finished
+I0409 16:19:22.859708 16435 load_component.h:170] finished
+I0409 16:19:22.859747 16435 load_component.h:125] ProcessGraph1
+I0409 16:19:22.859950 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:22.863633 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/1.bin data size(MB): 1560
+I0409 16:19:22.874570 16438 computing_component.h:103] ProcessGraph2
+I0409 16:19:22.874687 16438 bfs_vc_modify.cpp:94] Init() - Processing gid: 2
+I0409 16:19:22.890510 16438 bfs_vc_modify.cpp:101] PEval() - Processing gid: 2
+I0409 16:19:22.949063 16438 computing_component.h:121] finished
+I0409 16:19:24.898710 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/1.bin data size(MB): 777.0684051513672
+I0409 16:19:25.622220 16435 load_component.h:151] Read finished
+I0409 16:19:25.622300 16435 load_component.h:170] finished
+I0409 16:19:25.622331 16435 load_component.h:125] ProcessGraph0
+I0409 16:19:25.622348 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:25.622474 16438 computing_component.h:103] ProcessGraph1
+I0409 16:19:25.622516 16438 bfs_vc_modify.cpp:94] Init() - Processing gid: 1
+I0409 16:19:25.627987 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/0.bin data size(MB): 1646
+I0409 16:19:25.629683 16438 bfs_vc_modify.cpp:101] PEval() - Processing gid: 1
+I0409 16:19:25.629733 16438 computing_component.h:121] finished
+I0409 16:19:29.163412 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/0.bin data size(MB): 712.9699554443359
+I0409 16:19:29.965460 16435 load_component.h:151] Read finished
+I0409 16:19:29.965542 16435 load_component.h:170] finished
+I0409 16:19:29.965559 16435 load_component.h:125] ProcessGraph3
+I0409 16:19:29.965576 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:29.965661 16438 computing_component.h:103] ProcessGraph0
+I0409 16:19:29.965699 16438 bfs_vc_modify.cpp:94] Init() - Processing gid: 0
+I0409 16:19:29.970887 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/3.bin data size(MB): 815
+I0409 16:19:29.974316 16438 bfs_vc_modify.cpp:101] PEval() - Processing gid: 0
+I0409 16:19:29.974386 16438 computing_component.h:121] finished
+I0409 16:19:31.917208 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/3.bin data size(MB): 96.72755813598633
+I0409 16:19:32.176481 16435 load_component.h:151] Read finished
+I0409 16:19:32.176574 16435 load_component.h:170] finished
+I0409 16:19:32.176702 16438 computing_component.h:103] ProcessGraph3
+I0409 16:19:32.176749 16438 bfs_vc_modify.cpp:94] Init() - Processing gid: 3
+I0409 16:19:32.182603 16438 bfs_vc_modify.cpp:101] PEval() - Processing gid: 3
+I0409 16:19:32.182691 16438 computing_component.h:121] finished
+I0409 16:19:35.032299 16436 data_mngr.h:322] Erase2
+I0409 16:19:36.142494 16436 discharge_component.h:93] Sync
+All state: RC  RC  RC  RC  
+I0409 16:19:36.147101 16436 discharge_component.h:95] step: 1 30
+I0409 16:19:36.147206 16435 load_component.h:125] ProcessGraph3
+I0409 16:19:36.147262 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:36.149179 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/3.bin data size(MB): 815
+I0409 16:19:37.038446 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/3.bin data size(MB): 96.72755813598633
+I0409 16:19:37.135417 16435 load_component.h:151] Read finished
+I0409 16:19:37.135488 16435 load_component.h:170] finished
+I0409 16:19:37.135502 16435 load_component.h:125] ProcessGraph0
+I0409 16:19:37.135514 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:37.135658 16438 computing_component.h:103] ProcessGraph3
+I0409 16:19:37.135695 16438 bfs_vc_modify.cpp:182] IncEval() - Processing gid: 3
+I0409 16:19:37.143525 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/0.bin data size(MB): 1646
+I0409 16:19:37.266590 16438 computing_component.h:121] finished
+I0409 16:19:37.266594 16436 data_mngr.h:322] Erase3
+I0409 16:19:38.973416 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/0.bin data size(MB): 712.9699554443359
+I0409 16:19:39.401998 16435 load_component.h:151] Read finished
+I0409 16:19:39.402066 16435 load_component.h:170] finished
+I0409 16:19:39.402080 16435 load_component.h:125] ProcessGraph1
+I0409 16:19:39.402093 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:39.402221 16438 computing_component.h:103] ProcessGraph0
+I0409 16:19:39.402258 16438 bfs_vc_modify.cpp:182] IncEval() - Processing gid: 0
+I0409 16:19:39.402966 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/1.bin data size(MB): 1560
+I0409 16:19:40.003891 16438 computing_component.h:121] finished
+I0409 16:19:40.003895 16436 data_mngr.h:322] Erase0
+I0409 16:19:41.580590 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/1.bin data size(MB): 777.0684051513672
+I0409 16:19:41.995722 16435 load_component.h:151] Read finished
+I0409 16:19:41.995794 16435 load_component.h:170] finished
+I0409 16:19:41.995813 16435 load_component.h:125] ProcessGraph2
+I0409 16:19:41.995833 16435 csr_io_adapter.h:316] Read CSR from CSR bin
+I0409 16:19:41.995898 16438 computing_component.h:103] ProcessGraph1
+I0409 16:19:41.995936 16438 bfs_vc_modify.cpp:182] IncEval() - Processing gid: 1
+I0409 16:19:41.996910 16435 csr_io_adapter.h:381] data path: ssd/workspace_4/minigraph_data/2.bin data size(MB): 7158
+I0409 16:19:43.030259 16438 computing_component.h:121] finished
+I0409 16:19:43.030264 16436 data_mngr.h:322] Erase1
+I0409 16:19:51.380697 16435 csr_io_adapter.h:403] vdata path: ssd/workspace_4/minigraph_vdata/2.bin data size(MB): 3223.60298538208
+I0409 16:19:55.843466 16435 load_component.h:151] Read finished
+I0409 16:19:55.843548 16435 load_component.h:170] finished
+I0409 16:19:55.843701 16438 computing_component.h:103] ProcessGraph2
+I0409 16:19:55.843794 16438 bfs_vc_modify.cpp:182] IncEval() - Processing gid: 2
+I0409 16:19:56.796967 16438 computing_component.h:121] finished
+I0409 16:19:56.796976 16436 data_mngr.h:322] Erase2
+I0409 16:19:57.988115 16436 discharge_component.h:93] Sync
+All state: RT  RT  RT  RT  
+I0409 16:19:58.012498 16436 discharge_component.h:95] step: 2 30
+I0409 16:19:58.012536 16436 discharge_component.h:102] DC exit
+         #### RUNSYS(): Finish, Elapse time: 46.5845, Superstep: 2 ####      
+I0409 16:19:58.129418 16433 minigraph_sys.h:165] MiniGraph STOP.

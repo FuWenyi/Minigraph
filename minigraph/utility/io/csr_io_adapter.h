@@ -369,6 +369,10 @@ class CSRIOAdapter : public IOAdapterBase<GID_T, VID_T, VDATA_T, EDATA_T> {
                    size_in_offset + size_out_offset + size_in_edges +
                    size_out_edges + size_localid_by_globalid;
 
+      if (gid == 3) {
+        LOG_INFO("size_globalid:", size_globalid, " size_in_edges:", size_in_edges, " size_out_edges:", size_out_edges, " size_localid_by_globalid:", size_localid_by_globalid);
+      }
+
       size_t start_globalid = 0;
       size_t start_indegree = start_globalid + size_globalid;
       size_t start_outdegree = start_indegree + size_indegree;
@@ -378,6 +382,7 @@ class CSRIOAdapter : public IOAdapterBase<GID_T, VID_T, VDATA_T, EDATA_T> {
       size_t start_out_edges = start_in_edges + size_in_edges;
       size_t start_localid_by_globalid = start_out_edges + size_out_edges;
 
+      LOG_INFO("data path: ", data_pt, " data size(MB): ", total_size / 1024 / 1024);
       std::ifstream data_file(data_pt, std::ios::binary | std::ios::app);
       graph->buf_graph_ = (VID_T*)malloc(total_size);
       data_file.read((char*)graph->buf_graph_, total_size);
@@ -399,6 +404,7 @@ class CSRIOAdapter : public IOAdapterBase<GID_T, VID_T, VDATA_T, EDATA_T> {
 
     {
       // read vdata and edata
+      LOG_INFO("vdata path: ", vdata_pt, " data size(MB): ", (sizeof(VDATA_T) * graph->get_num_vertexes() + sizeof(EDATA_T) * ceil(graph->get_num_in_edges() / ALIGNMENT_FACTOR) * ALIGNMENT_FACTOR) / 1024 / 1024);
       std::ifstream vdata_file(vdata_pt, std::ios::binary | std::ios::app);
       graph->vdata_ =
           (VDATA_T*)malloc(sizeof(VDATA_T) * graph->get_num_vertexes());

@@ -118,6 +118,7 @@ class ComputingComponent : public ComponentBase<typename GRAPH_T::gid_t> {
     partial_result_queue_->push(gid);
     partial_result_cv_->notify_all();
     // sem.post();
+    LOG_INFO("finished");
     return;
   }
 

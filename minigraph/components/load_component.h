@@ -148,6 +148,7 @@ class LoadComponent : public ComponentBase<typename GRAPH_T::gid_t> {
       } else if (typeid(GRAPH_T) == typeid(EDGE_LIST_T)) {
         tag = this->data_mngr_->ReadGraph(gid, path, edgelist_bin);
       }
+      LOG_INFO("Read finished");
       if (tag) {
         this->state_machine_->ProcessEvent(gid, LOAD);
         while (!task_queue_->write(gid))

@@ -391,6 +391,12 @@ class EdgeCutPartitioner : public PartitionerBase<GRAPH_T> {
       }
     }
 
+    std::cout << "[num_vertexes_per_bucket] ";
+    for (size_t i = 0; i < num_partitions; i++) {
+      std::cout << i << ": " << *(num_vertexes_per_bucket + i) << " ";
+    }
+    std::cout << "\n";
+
     LOG_INFO("Run: Construct sub-graphs");
     pending_packages.store(cores);
 

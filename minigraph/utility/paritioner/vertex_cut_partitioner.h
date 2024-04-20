@@ -134,9 +134,12 @@ class VertexCutPartitioner : public PartitionerBase<GRAPH_T> {
 
     delete edgelist_graph;
 
+    std::cout << "[num_vertexes_per_bucket] ";
     for (size_t i = 0; i < num_partitions; i++) {
       *(num_vertexes_per_bucket + i) = is_in_bucketX[i]->get_num_bit();
+      std::cout << i << ": " << *(num_vertexes_per_bucket + i) << " ";
     }
+    std::cout << "\n";
 
     minigraph::utility::io::CSRIOAdapter<GID_T, VID_T, VDATA_T, EDATA_T>
         csr_io_adapter;
@@ -148,6 +151,7 @@ class VertexCutPartitioner : public PartitionerBase<GRAPH_T> {
       auto edgelist_graph = new EDGE_LIST_T(
           gid, size_per_bucket[gid], num_vertexes_per_bucket[gid],
           max_vid_per_bucket[gid], edges_buckets[gid]);
+      // each sub graph
       auto csr_graph = csr_io_adapter.EdgeList2CSR(gid, edgelist_graph, cores);
       delete edgelist_graph;
       free(edges_buckets[gid]);

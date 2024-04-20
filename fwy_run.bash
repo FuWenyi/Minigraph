@@ -4,3 +4,6 @@
 iostat -x 1 -k -p > iostat_pr.log&
 ./bin/pr_vc_exec -i ssd/workspace_10/ -cc 1 -buffer_size 1 -cores 12 > pr.txt 2>&1
 killall iostat
+#iostat -x 1 -k > iostat_bfs.log&
+#./bin/bfs_vc_modify_exec -i ssd/workspace_4/ -cc 1 -buffer_size 4 -cores 12 > bfs.txt 2>&1
+#killall iostat

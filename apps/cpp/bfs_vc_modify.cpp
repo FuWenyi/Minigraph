@@ -233,7 +233,7 @@ class BFSPIE : public minigraph::AutoAppBase<GRAPH_T, CONTEXT_T> {
 };
 
 struct Context {
-  vid_t root_id = 5;
+  vid_t root_id = 21458570;
 };
 
 using CSR_T = minigraph::graphs::ImmutableCSR<gid_t, vid_t, vdata_t, edata_t>;

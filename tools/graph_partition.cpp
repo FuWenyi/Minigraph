@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-#include "yaml-cpp/yaml.h"
+//#include "yaml-cpp/yaml.h"
 #include <gflags/gflags.h>
 
 #include "graphs/edgelist.h"
@@ -104,9 +104,11 @@ void GraphPartitionEdgeList2CSR(std::string src_pt, std::string dst_pt,
     edgelist_io_adapter.ReadEdgeListFromBin(edgelist_graph, 0, meta_pt, data_pt,
                                             vdata_pt);
   } else {
+    std::cout << "Start Read\n";
     edgelist_io_adapter.ParallelRead((GRAPH_BASE_T*)edgelist_graph,
                                      edgelist_csv, separator_params, 0, cores,
                                      src_pt);
+    std::cout << "End Read\n";
   }
 
   partitioner->ParallelPartition(edgelist_graph, num_partitions, cores, dst_pt,

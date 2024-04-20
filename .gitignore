@@ -4,9 +4,14 @@ cmake-build-debug
 ssd
 third_party/gflags
 third_party/glog
+third_party/googletest
 inputs/twitter.csv
 inputs/workspace
 inputs/workspace_10
+inputs/workspace_10_edge
+inputs/workspace_4_edge
+inputs/workspace_4_vertex
+build
 .idea
 
 # Auxiliary files

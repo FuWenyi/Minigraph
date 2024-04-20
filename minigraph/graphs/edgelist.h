@@ -100,8 +100,10 @@ class EdgeList : public Graph<GID_T, VID_T, VDATA_T, EDATA_T> {
       iter->second->vdata = this->vdata_ + index_by_vid_[vid];
       iter->second->state = vertexes_state_ + index_by_vid_[vid];
       return *iter->second;
+      LOG_INFO("here");
     } else {
       graphs::VertexInfo<VID_T, VDATA_T, EDATA_T> vertex_info;
+      LOG_INFO("not found");
       return vertex_info;
     }
   }
